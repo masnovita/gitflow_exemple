@@ -1,0 +1,37 @@
+git init
+git remote add origin https://github.com/masnovita/gitflow_exemple.git
+git branch -M main    
+
+#CREAR ARXIU README.md
+git add .
+git status
+git commit -m "1er commit!"
+
+git push -u origin
+
+git branch
+git checkout -b develop   // crear branca develop
+
+git branch
+git checkout -b hotfixes
+git checkout main // Tornem a main
+
+git checkout -b develop 
+git checkout main // Tornem a main
+
+// puja main
+git push -u origin
+branch 'main' set up to track 'origin/main'.
+
+// puja develop
+git switch develop
+git push -u origin
+
+// puja develop
+git switch hotfixes
+git push -u origin
+
+git checkout main
+git tag v0.1
+
+git push origin --tags
